@@ -9,7 +9,6 @@ export class RobotService {
   private restricatedCoordinates: Coordinate[] = [
     {x: 0, y: 0, type: EnumCoordinateType.Restricted, limit: EnumCoordinateLimit.Below},
     {x: 5, y: 5, type: EnumCoordinateType.Restricted, limit: EnumCoordinateLimit.Above},
-    {x: 2, y: 2, type: EnumCoordinateType.Restricted, limit: EnumCoordinateLimit.Equal},
   ];
 
   private validDirections: EnumDirections[] = Object.values(EnumDirections);
