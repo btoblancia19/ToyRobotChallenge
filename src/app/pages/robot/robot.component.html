@@ -1,0 +1,12 @@
+<div class="card-container">
+    <InstructionsComponent></InstructionsComponent>
+</div>
+<div class="card-container">
+    <CommandInputComponent 
+    [currentCoordinates]="currentCoordinates" 
+    (updateCurrentCoordinates)="updateCoordinates($event)"
+    (emitCommand)="executeAlertLastCommand($event)"></CommandInputComponent>
+</div>
+<div class="card-container">
+    <MovesHistoryComponent [moves]="movesHistory"></MovesHistoryComponent>
+</div>

@@ -1,0 +1,8 @@
+<div class="card">
+  <form (submit)="$event.preventDefault()">
+    <mat-form-field appearance="fill">
+      <mat-label>Input Command</mat-label>
+      <input matInput #commandInput (keyup.enter)="onEnter(commandInput.value)" >
+    </mat-form-field>
+  </form>
+</div>
