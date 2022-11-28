@@ -4,7 +4,7 @@ import { RobotComponent } from './pages/robot/robot.component';
 
 const routes: Routes = [
   {
-    path: "robot",
+    path: "",
     component: RobotComponent
   }
 ];
